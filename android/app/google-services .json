@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "406030308933",
+    "project_id": "spacex-flutter-auth",
+    "storage_bucket": "spacex-flutter-auth.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:406030308933:android:bf288ba622e8d81e1af52c",
+        "android_client_info": {
+          "package_name": "com.example.spacex"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "406030308933-o23272sj05jr2nu445uu3tllu2fahs1q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.spacex",
+            "certificate_hash": "c9480603b7ab4205a8d1c3ddcc920a167b3ca8e7"
+          }
+        },
+        {
+          "client_id": "406030308933-t5j84r8p20mocmq9ilefuac4i09vn50u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAR20__B47c6St3scCy8CkehAZrJ3ubBXo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "406030308933-t5j84r8p20mocmq9ilefuac4i09vn50u.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "406030308933-iqaadfqjti56dfjrqn6v7vln2dvenpda.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.spacex"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
