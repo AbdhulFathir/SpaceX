@@ -11,7 +11,9 @@ import 'firebase_options.dart';
 
   Future <void> main()  async {
     WidgetsFlutterBinding.ensureInitialized();
-    Firebase.initializeApp();
+    await Firebase.initializeApp(
+      options: DefaultFirebaseOptions.currentPlatform,
+    );
     DevicePreview(enabled: !kReleaseMode,
        builder: (context) => MyApp(), // Wrap your app
      );

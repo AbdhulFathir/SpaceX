@@ -26,10 +26,7 @@ class DefaultFirebaseOptions {
       case TargetPlatform.android:
         return android;
       case TargetPlatform.iOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for ios - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return ios;
       case TargetPlatform.macOS:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for macos - '
@@ -59,4 +56,16 @@ class DefaultFirebaseOptions {
     projectId: 'spacex-flutter-auth',
     storageBucket: 'spacex-flutter-auth.appspot.com',
   );
+
+  static const FirebaseOptions ios = FirebaseOptions(
+    apiKey: 'AIzaSyCj6kJuhVNuSQ4g2KWBCmRaeJJRrimCgjk',
+    appId: '1:406030308933:ios:09b839451252d9e01af52c',
+    messagingSenderId: '406030308933',
+    projectId: 'spacex-flutter-auth',
+    storageBucket: 'spacex-flutter-auth.appspot.com',
+    androidClientId: '406030308933-o23272sj05jr2nu445uu3tllu2fahs1q.apps.googleusercontent.com',
+    iosClientId: '406030308933-iqaadfqjti56dfjrqn6v7vln2dvenpda.apps.googleusercontent.com',
+    iosBundleId: 'com.example.spacex',
+  );
+
 }
