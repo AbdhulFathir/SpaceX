@@ -31,11 +31,12 @@ class IntroScreen3 extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         const Spacer(),
-                        const Text("Mission to future ",
-                            style: TextStyle(color: Colors.white ,fontWeight: FontWeight.bold )),
+                        const Center(
+                          child: Text("Mission to future ",
+                              style: TextStyle(color: Colors.white ,fontWeight: FontWeight.bold )),
+                        ),
                         const Spacer(),
-                        const Text("it's not just  the space \nfly to the moon, fly to the mars\n"
-                            "Beyond that, start journey for the \nspace explorations",
+                        const Text("it's not just  the space fly to the moon, fly to the marsBeyond that, start journey for the space explorations",
                             style: TextStyle(color: Colors.grey)),
                         const Spacer(),
                         Padding(

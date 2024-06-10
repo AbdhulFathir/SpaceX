@@ -31,8 +31,10 @@ class IntroScreen2 extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Spacer(),
-                        const Text("History of launches",
-                            style: TextStyle(color: Colors.white ,fontWeight: FontWeight.bold)),
+                        const Center(
+                          child: Text("History of launches",
+                              style: TextStyle(color: Colors.white ,fontWeight: FontWeight.bold)),
+                        ),
                         Spacer(),
                         const Text("SpaceX has historical number of \n"
                             "launches so far to explore th space \n"

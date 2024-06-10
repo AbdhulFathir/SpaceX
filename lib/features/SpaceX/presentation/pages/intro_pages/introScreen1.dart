@@ -33,8 +33,10 @@ class IntroScreen1 extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Spacer(),
-                        const Text("Rockets and Capsules",
-                            style: TextStyle(color: Colors.white ,fontWeight: FontWeight.bold)),
+                        const Center(
+                          child: Text("Rockets and Capsules",
+                              style: TextStyle(color: Colors.white ,fontWeight: FontWeight.bold )),
+                        ),
                         Spacer(),
                         const Text("The journey of the reusable rocket \nand the innovativeness discoveries\n"
                             "results the falcon rockets and dragon\ncapsules" ,
