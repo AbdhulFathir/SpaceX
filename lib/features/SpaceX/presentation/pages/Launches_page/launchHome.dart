@@ -4,7 +4,6 @@ import 'package:http/http.dart' as http;
 import 'dart:convert';
 import 'launchDetailsPages.dart';
 import 'package:glassmorphism/glassmorphism.dart';
-import 'package:intl/intl.dart';
 
 class LaunchHome extends StatefulWidget {
   const LaunchHome({Key? key}) : super(key: key);
@@ -16,10 +15,9 @@ class LaunchHome extends StatefulWidget {
 
 class _LaunchHomeState extends State<LaunchHome> {
   Future<List<LaunchData>> getUsers() async {
-    var url = Uri.parse('https://api.spacex.land/rest/launches?');
+    var url = Uri.parse('https://api.spacexdata.com/v3/launches/past');
     late http.Response response;
     List<LaunchData> users = [];
-    int n =0;
 
     try {
       response = await http.get(url);
