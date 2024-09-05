@@ -1,10 +1,9 @@
+import 'intro_screen_2.dart';
+import 'intro_screen_3.dart';
 import 'package:flutter/material.dart';
 
-import 'introScreen2.dart';
-import 'introScreen3.dart';
-
 class IntroScreen1 extends StatelessWidget {
-  const IntroScreen1({Key? key}) : super(key: key);
+  const IntroScreen1({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -26,49 +25,61 @@ class IntroScreen1 extends StatelessWidget {
                   height: 350,
                   decoration: BoxDecoration(
                       color: Colors.black,
-                      borderRadius: BorderRadius.circular(50)),
+                      borderRadius: BorderRadius.circular(30)),
                   child: Padding(
-                    padding: EdgeInsets.all(15),
+                    padding: const EdgeInsets.only(
+                        top: 30, bottom: 30, left: 30, right: 30),
                     child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Spacer(),
                         const Text("Rockets and Capsules",
-                            style: TextStyle(color: Colors.white ,fontWeight: FontWeight.bold)),
-                        Spacer(),
-                        const Text("The journey of the reusable rocket \nand the innovativeness discoveries\n"
-                            "results the falcon rockets and dragon\ncapsules" ,
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold)),
+                        const Text(
+                            "The journey of the reusable rocket and the innovativeness discoveries results the falcon rockets and dragon capsules",
                             style: TextStyle(color: Colors.grey)),
-                        Spacer(),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             InkResponse(
                               onTap: () {
-                                Navigator.push(context, MaterialPageRoute(builder: (context) => const IntroScreen3(),));
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) =>
+                                          const IntroScreen3(),
+                                    ));
                               },
                               child: const CircleAvatar(
                                 backgroundColor: Colors.black87,
                                 radius: 25,
-                                child: Text("Skip"),
+                                child: Text(
+                                  "Skip",
+                                  style: TextStyle(color: Colors.white),
+                                ),
                               ),
                             ),
                             InkResponse(
                               onTap: () {
-                                Navigator.push(context, MaterialPageRoute(builder: (context) => const IntroScreen2(),));
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) =>
+                                          const IntroScreen2(),
+                                    ));
                               },
                               child: const CircleAvatar(
                                 backgroundColor: Colors.white,
                                 radius: 25,
-                                child: Icon(Icons.navigate_next,
+                                child: Icon(
+                                  Icons.navigate_next,
                                   color: Colors.black,
                                 ),
                               ),
                             ),
-
                           ],
                         ),
-                        Spacer()
                       ],
                     ),
                   ),

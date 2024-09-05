@@ -11,18 +11,20 @@ import 'firebase_options.dart';
 
   Future <void> main()  async {
     WidgetsFlutterBinding.ensureInitialized();
-    Firebase.initializeApp();
+    await Firebase.initializeApp(
+      options: DefaultFirebaseOptions.currentPlatform,
+    );
     DevicePreview(enabled: !kReleaseMode,
-       builder: (context) => MyApp(), // Wrap your app
+       builder: (context) => const MyApp(), // Wrap your app
      );
-     runApp(MyApp());
+     runApp(const MyApp());
    }
 
 
 
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -33,7 +35,7 @@ class MyApp extends StatelessWidget {
          primarySwatch: Colors.blue,
          textTheme: GoogleFonts.poppinsTextTheme(),
       ),
-      home:  SplashView(),
+      home:  const SplashView(),
     );
   }
 }

@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-
-import 'Launches_page/launchHome.dart';
-import 'loginPage/loginPage.dart';
+import 'Launches_page/launch_home.dart';
 
 class DialogBox extends StatefulWidget {
-  const DialogBox({Key? key}) : super(key: key);
+  const DialogBox({super.key});
 
   @override
   State<DialogBox> createState() => _DialogBoxState();
@@ -14,9 +12,8 @@ class _DialogBoxState extends State<DialogBox> {
   @override
   Widget build(BuildContext context) {
     return AlertDialog(
-      title: Text('Yeay! Welcome Back'),
-
-      content: const Text('Once again you login successfully into visho app',
+      title: const Text('Yeah! Welcome Back'),
+      content: const Text('Once again you login successfully into  app',
           style: TextStyle(fontSize: 10, fontWeight: FontWeight.bold,color: Colors.black54)),
 
       actions: [

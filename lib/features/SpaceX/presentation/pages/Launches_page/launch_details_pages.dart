@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
-import 'LaunchUIData.dart';
+import 'Launch_ui_data.dart';
 
 class UserDetail extends StatelessWidget {
   final LaunchData data;

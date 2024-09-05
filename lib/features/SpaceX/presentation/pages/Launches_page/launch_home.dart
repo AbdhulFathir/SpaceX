@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'LaunchUIData.dart';
+import 'Launch_ui_data.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
-import 'launchDetailsPages.dart';
+import 'launch_details_pages.dart';
 import 'package:glassmorphism/glassmorphism.dart';
 import 'package:intl/intl.dart';
 

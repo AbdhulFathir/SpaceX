@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:spacex/features/SpaceX/presentation/pages/intro_pages/introScreen3.dart';
+import 'package:spacex/features/SpaceX/presentation/pages/intro_pages/intro_screen_3.dart';
 
 class IntroScreen2 extends StatelessWidget {
-  const IntroScreen2({Key? key}) : super(key: key);
+  const IntroScreen2({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -24,38 +24,49 @@ class IntroScreen2 extends StatelessWidget {
                   height: 350,
                   decoration: BoxDecoration(
                       color: Colors.black,
-                      borderRadius: BorderRadius.circular(50)),
+                      borderRadius: BorderRadius.circular(30)),
                   child: Padding(
-                    padding: EdgeInsets.all(20),
+                    padding: const EdgeInsets.only(
+                        top: 30, bottom: 30, left: 30, right: 30),
                     child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Spacer(),
                         const Text("History of launches",
-                            style: TextStyle(color: Colors.white ,fontWeight: FontWeight.bold)),
-                        Spacer(),
-                        const Text("SpaceX has historical number of \n"
-                            "launches so far to explore th space \n"
-                            "and to develop a network around \n"
-                            "the world",
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold)),
+                        const Text(
+                            "SpaceX has historical number of launches so far to explore th space and to develop a network around the world",
                             style: TextStyle(color: Colors.grey)),
-                        Spacer(),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             InkResponse(
                               onTap: () {
-                                Navigator.push(context, MaterialPageRoute(builder: (context) => const IntroScreen3(),));
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) =>
+                                          const IntroScreen3(),
+                                    ));
                               },
                               child: const CircleAvatar(
                                 backgroundColor: Colors.black45,
                                 radius: 25,
-                                child: Text("Skip"),
+                                child: Text(
+                                  "Skip",
+                                  style: TextStyle(color: Colors.white),
+                                ),
                               ),
                             ),
                             InkResponse(
                               onTap: () {
-                                Navigator.push(context, MaterialPageRoute(builder: (context) => const IntroScreen3(),));
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) =>
+                                          const IntroScreen3(),
+                                    ));
                               },
                               child: const CircleAvatar(
                                 backgroundColor: Colors.white,
@@ -68,7 +79,6 @@ class IntroScreen2 extends StatelessWidget {
                             ),
                           ],
                         ),
-                        Spacer(),
                       ],
                     ),
                   ),

@@ -4,9 +4,9 @@ import 'package:glassmorphism/glassmorphism.dart';
 import 'package:otp_text_field/otp_field.dart';
 import 'package:otp_text_field/otp_text_field.dart';
 import 'package:otp_text_field/style.dart';
-import '../Launches_page/launchHome.dart';
-import '../dialogBox.dart';
-import 'loginPage.dart';
+import '../Launches_page/launch_home.dart';
+import '../dialog_box.dart';
+import 'login_page.dart';
 
 class OtpPage extends StatefulWidget {
   const OtpPage({Key? key}) : super(key: key);

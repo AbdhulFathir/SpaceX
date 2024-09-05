@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import '../loginPage/loginPage.dart';
+import '../loginPage/login_page.dart';
 
 class IntroScreen3 extends StatelessWidget {
-  const IntroScreen3({Key? key}) : super(key: key);
+  const IntroScreen3({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -24,20 +24,17 @@ class IntroScreen3 extends StatelessWidget {
                   height: 350,
                   decoration: BoxDecoration(
                       color: Colors.black,
-                      borderRadius: BorderRadius.circular(50)),
+                      borderRadius: BorderRadius.circular(30)),
                   child: Padding(
-                    padding: const EdgeInsets.all(15),
+                    padding: const EdgeInsets.only(
+                        top: 30, bottom: 30, left: 30, right: 30),
                     child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        const Spacer(),
                         const Text("Mission to future ",
                             style: TextStyle(color: Colors.white ,fontWeight: FontWeight.bold )),
-                        const Spacer(),
-                        const Text("it's not just  the space \nfly to the moon, fly to the mars\n"
-                            "Beyond that, start journey for the \nspace explorations",
+                        const Text("it's not just  the space fly to the moon, fly to the mars Beyond that, start journey for the space explorations",
                             style: TextStyle(color: Colors.grey)),
-                        const Spacer(),
                         Padding(
                           padding: const EdgeInsets.all(20),
                           child: InkResponse(
@@ -49,13 +46,12 @@ class IntroScreen3 extends StatelessWidget {
                                 borderRadius: BorderRadius.circular(10),
                                 color: Colors.white
                               ),
-
                               height: 50,
-                              child: const Center(child:  Text("Get Started" ,
+                              child: const Center(child:  Text("Get Started",
                                 style: TextStyle(color: Colors.black87,fontWeight: FontWeight.bold),)),
                             ),
                           ),
-                        )
+                        ),
                       ],
                     ),
                   ),

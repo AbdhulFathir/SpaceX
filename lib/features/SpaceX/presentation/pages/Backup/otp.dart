@@ -4,7 +4,7 @@ import 'package:glassmorphism/glassmorphism.dart';
 import 'package:otp_text_field/otp_field.dart';
 import 'package:otp_text_field/otp_text_field.dart';
 import 'package:otp_text_field/style.dart';
-import '../dialogBox.dart';
+import '../dialog_box.dart';
 import 'loginHome.dart';
 
 class OtpPage extends StatefulWidget {

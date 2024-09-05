@@ -59,4 +59,5 @@ class DefaultFirebaseOptions {
     projectId: 'spacex-flutter-auth',
     storageBucket: 'spacex-flutter-auth.appspot.com',
   );
+
 }
