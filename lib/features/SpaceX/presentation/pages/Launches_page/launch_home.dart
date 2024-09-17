@@ -6,7 +6,7 @@ import 'launch_details_pages.dart';
 import 'package:glassmorphism/glassmorphism.dart';
 
 class LaunchHome extends StatefulWidget {
-  const LaunchHome({Key? key}) : super(key: key);
+  const LaunchHome({super.key});
 
   @override
   State<LaunchHome> createState() => _LaunchHomeState();
@@ -32,30 +32,12 @@ class _LaunchHomeState extends State<LaunchHome> {
           details ??= 'not available';
           var date = await item['launch_date_utc'];
 
-          // var subTitle = "no";
-          // if(item['mission_id'].isNotEmty){
-          //   subTitle = await item['mission_id'][0];
-          // }
-
-
-
-
 
           var status = item['launch_success'];
           status ??= true;
           var year = item['launch_year'];
           // var date = item['static_fire_date_utc'];
           LaunchData user = LaunchData(title, details, date, status ,year);
-
-
-          // print(subTitle);
-          // n += 1 ;
-          // print('$n');
-          // print(title);
-          // print("d" + details);
-          // print(date);
-          // print(status);
-
 
           users.add(user);
 
@@ -97,14 +79,17 @@ class _LaunchHomeState extends State<LaunchHome> {
                   return const Center(
                     child: Text('Waiting',
                         style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 20,color: Colors.white)),
+                            fontWeight: FontWeight.bold,
+                            fontSize: 20,color: Colors.white)),
                   );
-                } else {
+                }
+                else {
                   if (snapshot.hasError) {
                     return Text(snapshot.error.toString(),
                         style: const TextStyle(
                             fontWeight: FontWeight.bold, fontSize: 20,color: Colors.white));
-                  } else {
+                  }
+                  else {
                     return Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
