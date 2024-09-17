@@ -108,9 +108,9 @@ class _LaunchHomeState extends State<LaunchHome> {
                     return Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Row(
+                        const Row(
                           mainAxisAlignment: MainAxisAlignment.start,
-                          children: const [
+                          children: [
                             Padding(
                               padding: EdgeInsets.all(15),
                                 child: Text("  Launches" ,style: TextStyle(color: Colors.white ,fontSize: 20)))
@@ -214,8 +214,8 @@ class _LaunchHomeState extends State<LaunchHome> {
                                                   ],
                                                 ),
                                                 const Spacer(),
-                                                Column(
-                                                  children: const [
+                                                const Column(
+                                                  children: [
                                                     Text(
                                                         "  Second  GTO launch for Falcon 9. The USAF evaluated launch data  from this flight as \n"
                                                             "  part of a separate certification program for SpaceX to qualify to fly U.S. military   ........",
