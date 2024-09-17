@@ -98,7 +98,8 @@ class _LaunchHomeState extends State<LaunchHome> {
                           children: [
                             Padding(
                               padding: EdgeInsets.all(15),
-                                child: Text("  Launches" ,style: TextStyle(color: Colors.white ,fontSize: 20)))
+                                child: Text("  Launches",
+                                    style: TextStyle(color: Colors.white ,fontSize: 20)))
                           ],
                         ),
                         Expanded(
