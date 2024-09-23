@@ -36,7 +36,7 @@ class _DialogBoxState extends State<DialogBox> {
                 color: Colors.black,
               ),
               child: const Center(
-                  child: Text('Go to Home',
+                  child: Text('Go To Home',
                       style: TextStyle(color: Colors.white))),
             ),
           ),
