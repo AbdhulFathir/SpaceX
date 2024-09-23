@@ -14,18 +14,13 @@ class _DialogBoxState extends State<DialogBox> {
     return AlertDialog(
       title: const Text('Yeah! Welcome Back'),
       content: const Text('Once again you login successfully into  app',
-          style: TextStyle(
-              fontSize: 10,
-              fontWeight: FontWeight.bold,
-              color: Colors.black54)),
+          style: TextStyle(fontSize: 10, fontWeight: FontWeight.bold,color: Colors.black54)),
+
       actions: [
         InkWell(
+
           onTap: () {
-            Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const LaunchHome(),
-                ));
+            Navigator.push(context, MaterialPageRoute(builder: (context) => const LaunchHome(),));
           }, // function used to perform after pressing the button
           child: Center(
             child: Container(
