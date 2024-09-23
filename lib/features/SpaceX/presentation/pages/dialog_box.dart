@@ -12,8 +12,8 @@ class _DialogBoxState extends State<DialogBox> {
   @override
   Widget build(BuildContext context) {
     return AlertDialog(
-      title: const Text('Yeah! Welcome Back'),
-      content: const Text('Once again you login successfully into  app',
+      title: const Text('Yeah! Welcome '),
+      content: const Text('You login successfully into  app',
           style: TextStyle(
               fontSize: 10,
               fontWeight: FontWeight.bold,
