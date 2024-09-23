@@ -17,7 +17,7 @@ class _LaunchHomeState extends State<LaunchHome> {
     var url = Uri.parse('https://api.spacexdata.com/v3/launches/past');
     late http.Response response;
     List<LaunchData> users = [];
-    int n = 0;
+    // int n = 0;
 
     try {
       response = await http.get(url);
