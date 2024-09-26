@@ -54,7 +54,7 @@ class _LoginPageState extends State<LoginPage> {
                       padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 16),
                       child: TextFormField(
                         onChanged: (value){
-                          phone = value;
+                          phone = "+94$value";
                         },
                         decoration: const InputDecoration(
                           border: InputBorder.none,
